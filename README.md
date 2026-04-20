@@ -1,44 +1,85 @@
-# rest-countries
+# 🌍 REST Countries Explorer (Vue.js)
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern and responsive **Countries Explorer** application built using **Vue.js**, allowing users to explore countries around the world باستخدام بيانات حقيقية من REST API.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Live Demo
 
-## Recommended Browser Setup
+🔗 https://rest-countries-one-phi.vercel.app/
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Customize configuration
+## 📌 Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+* 🔍 Search countries by name
+* 🌍 Filter countries by region
+* 📄 View detailed information for each country
+* 🔗 Dynamic routing between pages
+* 📱 Fully responsive design
+* ⚡ Fast and smooth user experience
 
-## Project Setup
+---
 
-```sh
+## 🛠️ Built With
+
+* Vue.js
+* JavaScript (ES6+)
+* REST Countries API
+* HTML5
+* CSS3
+
+---
+
+## 🎯 The Challenge
+
+This project is a solution to the **Frontend Mentor REST Countries API Challenge**, focusing on building a real-world application with API integration and interactive UI.
+
+---
+
+## 📚 What I Learned
+
+* Working with external APIs
+* Managing state and data fetching in Vue
+* Implementing search and filtering logic
+* Using Vue Router for dynamic pages
+* Building responsive layouts
+
+---
+
+## 🔧 Setup & Installation
+
+```bash id="7j2s0x"
+# Clone the repository
+git clone https://github.com/MustafaKullab/rest-countries.git
+
+# Navigate into the project folder
+cd rest-countries
+
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Run development server
 npm run dev
 ```
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 📈 Future Improvements
 
-### Lint with [ESLint](https://eslint.org/)
+* 🌙 Add dark mode
+* ⭐ Save favorite countries
+* 🔍 Advanced filtering options
+* 📊 Add charts or statistics
 
-```sh
-npm run lint
-```
+---
+
+## 👤 Author
+
+* GitHub: https://github.com/MustafaKullab
+
+---
+
+## 🙌 Acknowledgments
+
+Thanks to **Frontend Mentor** for providing this challenge and design resources, and to the **REST Countries API** for the data.
