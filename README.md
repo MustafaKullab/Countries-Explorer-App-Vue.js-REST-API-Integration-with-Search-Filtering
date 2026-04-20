@@ -1,6 +1,6 @@
 # 🌍 REST Countries Explorer (Vue.js)
 
-A modern and responsive **Countries Explorer** application built using **Vue.js**, allowing users to explore countries around the world باستخدام بيانات حقيقية من REST API.
+A modern and responsive **Countries Explorer** application built with **Vue.js**, allowing users to explore countries worldwide using real-time data from the REST Countries API.
 
 ---
 
@@ -14,10 +14,10 @@ A modern and responsive **Countries Explorer** application built using **Vue.js*
 
 * 🔍 Search countries by name
 * 🌍 Filter countries by region
-* 📄 View detailed information for each country
+* 📄 View detailed country information
 * 🔗 Dynamic routing between pages
 * 📱 Fully responsive design
-* ⚡ Fast and smooth user experience
+* ⚡ Smooth and fast user experience
 
 ---
 
@@ -33,23 +33,23 @@ A modern and responsive **Countries Explorer** application built using **Vue.js*
 
 ## 🎯 The Challenge
 
-This project is a solution to the **Frontend Mentor REST Countries API Challenge**, focusing on building a real-world application with API integration and interactive UI.
+This project is a solution to the **Frontend Mentor REST Countries API Challenge**, focused on building a real-world application with API integration and interactive UI components.
 
 ---
 
 ## 📚 What I Learned
 
-* Working with external APIs
-* Managing state and data fetching in Vue
+* Fetching and handling data from external APIs
+* Managing state in Vue applications
 * Implementing search and filtering logic
-* Using Vue Router for dynamic pages
+* Using Vue Router for dynamic navigation
 * Building responsive layouts
 
 ---
 
 ## 🔧 Setup & Installation
 
-```bash id="7j2s0x"
+```bash id="a7k2lm"
 # Clone the repository
 git clone https://github.com/MustafaKullab/rest-countries.git
 
@@ -68,9 +68,9 @@ npm run dev
 ## 📈 Future Improvements
 
 * 🌙 Add dark mode
-* ⭐ Save favorite countries
+* ⭐ Add favorite countries feature
 * 🔍 Advanced filtering options
-* 📊 Add charts or statistics
+* 📊 Data visualization (charts/statistics)
 
 ---
 
@@ -82,4 +82,5 @@ npm run dev
 
 ## 🙌 Acknowledgments
 
-Thanks to **Frontend Mentor** for providing this challenge and design resources, and to the **REST Countries API** for the data.
+* Frontend Mentor for the challenge and design
+* REST Countries API for providing the data
