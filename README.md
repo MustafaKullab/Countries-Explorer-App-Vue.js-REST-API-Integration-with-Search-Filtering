@@ -4,6 +4,11 @@ A modern and responsive **Countries Explorer** application built with **Vue.js**
 
 ---
 
+## 📸 Preview
+<img width="1893" height="912" alt="image" src="https://github.com/user-attachments/assets/9ffc4ea6-216b-4980-adda-9adeaf95019a" />
+
+---
+
 ## 🚀 Live Demo
 
 🔗 https://rest-countries-one-phi.vercel.app/
