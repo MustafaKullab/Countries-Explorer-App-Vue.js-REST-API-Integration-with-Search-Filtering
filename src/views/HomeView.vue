@@ -51,7 +51,7 @@
               </div>
               <div class="region"><strong class="">Region </strong>{{ country.region }}</div>
               <div class="capital">
-                <strong class="">Capital </strong>{{ countr?.capital?.[0] }}
+                <strong class="">Capital </strong>{{ country?.capital?.[0] }}
               </div>
             </div>
             <div class="showDetalis p-3 text-center">
