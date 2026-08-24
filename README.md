@@ -1,8 +1,12 @@
 # 🌍 REST Countries Explorer
 
-A modern and responsive **Vue 3** application that allows users to explore countries around the world using real-time data from the **REST Countries API**.
+A modern and responsive **Vue 3** application for exploring countries around the world using the **REST Countries API**.
+
+The application supports country search, region filtering, detailed country information, and navigation between neighboring countries.
 
 > 🚀 **Live Demo:** [Open REST Countries Explorer](https://rest-countries-one-phi.vercel.app/)
+
+> ⚠️ **Note:** The live demo may currently be affected by changes or availability of the external REST Countries API.
 
 ---
 
@@ -17,21 +21,18 @@ alt="REST Countries Explorer Preview"
 
 ## ✨ Features
 
-### 🔍 Country Discovery
+### 🔍 Country Explorer
 
 * Search countries by name
 * Filter countries by region
-* Browse country cards with:
-
-  * Flag
-  * Population
-  * Region
-  * Capital
-* Responsive country grid layout
+* Display country flags
+* Display population, region, and capital
+* Responsive country grid
+* Navigate to detailed country information
 
 ### 📄 Country Details
 
-* View detailed country information
+* View detailed information about a selected country
 * Native name
 * Population
 * Region and sub-region
@@ -44,70 +45,57 @@ alt="REST Countries Explorer Preview"
 ### 🧭 Navigation
 
 * Vue Router based navigation
-* Dedicated country details route
+* Dynamic country detail routes
 * Back navigation
-* Navigate directly between neighboring countries
+* Navigate directly to neighboring countries
 
-### 📱 Responsive UI
+### 📱 Responsive Design
 
-* Responsive layout for different screen sizes
-* Clean and simple interface
-* Bootstrap-based layout and components
+* Responsive layout across different screen sizes
+* Bootstrap-based layout
+* Clean and simple user interface
 
 ---
 
 ## 🧰 Tech Stack
 
-| Technology         | Purpose                       |
+| Technology         | Usage                         |
 | ------------------ | ----------------------------- |
 | Vue 3              | Frontend framework            |
-| Vue Router         | Client-side routing           |
 | JavaScript (ES6+)  | Application logic             |
+| Vue Router         | Client-side routing           |
+| Fetch API          | External API requests         |
 | REST Countries API | Country data                  |
-| HTML5              | Page structure                |
-| SCSS               | Styling                       |
 | Bootstrap          | Responsive layout and UI      |
+| SCSS               | Styling                       |
 | Vite               | Development and build tooling |
-| Fetch API          | HTTP requests                 |
 
 ---
 
 ## 🔌 API Integration
 
-The application consumes data from the **REST Countries API**.
+This project uses the **REST Countries API** to retrieve country information.
 
-### Countries
+The application makes requests for:
 
-```text
-GET https://restcountries.com/v3.1/all
-```
+* All countries
+* Country details by name
+* Border countries by country codes
 
-Used to retrieve country data for the main explorer page.
-
-### Country Details
+Example request used by the project:
 
 ```text
-GET https://restcountries.com/v3.1/name/{country}
+https://restcountries.com/v3.1/all
 ```
 
-Used to retrieve detailed information for a selected country.
-
-### Border Countries
-
-```text
-GET https://restcountries.com/v3.1/alpha?codes={codes}
-```
-
-Used to resolve neighboring country codes into country information.
+Additional requests are used for country details and neighboring countries.
 
 ---
 
 ## 📁 Project Structure
 
-```text id="n5n9p6"
+```text
 rest-countries/
-├── public/
-│   └── favicon.ico
 ├── src/
 │   ├── components/
 │   │   └── NavBar.vue
@@ -118,6 +106,7 @@ rest-countries/
 │   │   └── CountryDetails.vue
 │   ├── App.vue
 │   └── main.js
+├── public/
 ├── index.html
 ├── vite.config.js
 └── package.json
@@ -129,12 +118,12 @@ rest-countries/
 
 ### Prerequisites
 
-* Node.js `20.19+` or `22.12+`
+* Node.js
 * npm
 
 ### Installation
 
-```bash id="8d8m8k"
+```bash
 git clone https://github.com/MustafaKullab/Countries-Explorer-App-Vue.js-REST-API-Integration-with-Search-Filtering.git
 cd Countries-Explorer-App-Vue.js-REST-API-Integration-with-Search-Filtering
 npm install
@@ -142,25 +131,25 @@ npm install
 
 ### Run the development server
 
-```bash id="k43j8x"
+```bash
 npm run dev
 ```
 
 The application will be available at:
 
-```text id="2h6x86"
+```text
 http://localhost:5173
 ```
 
 ### Build for production
 
-```bash id="a7l1u9"
+```bash
 npm run build
 ```
 
 ### Preview the production build
 
-```bash id="12qvvf"
+```bash
 npm run preview
 ```
 
@@ -170,28 +159,27 @@ npm run preview
 
 This project was built as a solution to the **Frontend Mentor REST Countries API Challenge**.
 
-The main goal was to practice:
+The main focus was practicing:
 
-* Working with external REST APIs
-* Fetching and displaying remote data
+* External REST API integration
+* Fetching asynchronous data
 * Search and filtering logic
-* Vue Router navigation
-* Dynamic route parameters
+* Vue Router and dynamic routes
+* Working with related API data
 * Responsive frontend development
-* Handling country and border-country data
 
 ---
 
 ## 📚 What I Learned
 
-* Fetching data from external APIs with the Fetch API
+* Fetching data from an external REST API
 * Handling asynchronous requests
-* Managing reactive state in Vue
+* Working with reactive data using Vue
 * Using computed properties for search and filtering
-* Working with Vue Router
-* Using route parameters to load dynamic content
-* Fetching related data from multiple API endpoints
-* Building responsive interfaces with Vue and Bootstrap
+* Using Vue Router with dynamic route parameters
+* Fetching neighboring country data from a second API request
+* Building responsive interfaces
+* Handling missing country information with fallback values
 
 ---
 
@@ -199,9 +187,9 @@ The main goal was to practice:
 
 * Add dark mode
 * Add favorite countries
-* Improve filtering options
-* Add loading and error states
-* Add richer country statistics and visualizations
+* Expand filtering options
+* Improve loading and error states
+* Add richer country statistics
 * Improve accessibility and keyboard navigation
 
 ---
