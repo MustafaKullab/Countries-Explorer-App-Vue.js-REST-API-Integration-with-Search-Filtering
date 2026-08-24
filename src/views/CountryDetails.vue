@@ -119,7 +119,7 @@ async function getCountry() {
       .then((res) => res.json())
       .then((data) => (country.value = data[0]));
 
-    const codes = country.value.borders.join(","); // متغير نخزن فيه الدول المجاورة ونحولها لنص ما بينه فاصلة
+    const codes = country.value.borders?.join(",") || ""; // متغير نخزن فيه الدول المجاورة ونحولها لنص ما بينه فاصلة
     if (codes) {
       // اذا كان هناك دول جوار
       await fetch(`https://restcountries.com/v3.1/alpha?codes=${codes}`) // جيبلي دول الجوار وخزنهم في المتغير اللي عرفناه
